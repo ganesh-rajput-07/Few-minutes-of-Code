@@ -45,8 +45,8 @@ Each problem includes:
 ## 🤝 Let's Connect
 
 📺 YouTube: [@ManyuniX](https://youtube.com/@ManyuniX)  
-💼 LinkedIn: [Ganesh Rajput](https://linkedin.com/in/ganesh-rajput-2004)  
-💻 GitHub: [Ganesh-Rajput-2004](https://github.com/Ganesh-Rajput-2004)
+💼 LinkedIn: [Ganesh Rajput](https://www.linkedin.com/in/ganeshrajput7045/)  
+💻 GitHub: [Ganesh-Rajput-2004](https://github.com/ganesh-rajput-07)
 
 ---
 
