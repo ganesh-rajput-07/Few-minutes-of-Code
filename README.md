@@ -46,7 +46,7 @@ Each problem includes:
 
 📺 YouTube: [@ManyuniX](https://youtube.com/@ManyuniX)  
 💼 LinkedIn: [Ganesh Rajput](https://www.linkedin.com/in/ganeshrajput7045/)  
-💻 GitHub: [Ganesh-Rajput-2004](https://github.com/ganesh-rajput-07)
+💻 GitHub: [Ganesh Rajput](https://github.com/ganesh-rajput-07)
 
 ---
 
