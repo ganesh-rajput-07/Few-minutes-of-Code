@@ -1,0 +1,18 @@
+def comfortable_word(word):
+    left = set("qwertasdfgzxcvb")
+    right = set("yuiophjklnm")
+
+    previous_hand = None
+
+    for ch in word:
+        if ch in left:
+            current_hand = "left"
+        else:
+            current_hand = "right"
+
+        if previous_hand == current_hand:
+            return False
+
+        previous_hand = current_hand
+
+    return True
