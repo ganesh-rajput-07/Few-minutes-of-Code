@@ -1,0 +1,8 @@
+def frame(text, char):
+    max_required_chars = len(max(text,key=len)) + 4
+    strng = char * max_required_chars + "\n"
+    for i in text :
+        required_space=len(max(text,key=len))-len(i)+1
+        strng = strng + f"{char} {i}"+ " "*required_space + f"{char}\n"
+    strng = strng +char * max_required_chars
+    return strng
