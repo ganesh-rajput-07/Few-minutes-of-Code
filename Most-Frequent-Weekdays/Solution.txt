@@ -1,0 +1,15 @@
+import datetime
+
+def most_frequent_days(year):
+    days = [
+        "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday", "Sunday"
+    ]
+    first_day = datetime.date(year, 1, 1).weekday()
+    [days[first_day], days[(first_day + 1) % 7]]
+    if year%4 == 0 :
+        days_list = sorted([first_day, (first_day + 1) % 7])
+        return [days[days_list[0]], days[days_list[1]]]
+    else:
+        return [days[first_day]]
+        
