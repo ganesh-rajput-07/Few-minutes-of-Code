@@ -1,0 +1,34 @@
+import heapq
+
+def allocate_rooms(customers):
+    # Keep original index
+    indexed_customers = [
+        (arrival, departure, index)
+        for index, (arrival, departure) in enumerate(customers)
+    ]
+
+    # Sort by arrival time
+    indexed_customers.sort()
+
+    # Min heap stores (departure_day, room_number)
+    occupied_rooms = []
+
+    # Room assignment for original order
+    answer = [0] * len(customers)
+
+    # Next room number to create
+    next_room = 1
+
+    for arrival, departure, original_index in indexed_customers:
+
+        # Can we reuse a room?
+        if occupied_rooms and occupied_rooms[0][0] < arrival:
+            _, room = heapq.heappop(occupied_rooms)
+        else:
+            room = next_room
+            next_room += 1
+
+        answer[original_index] = room
+        heapq.heappush(occupied_rooms, (departure, room))
+
+    return answer
