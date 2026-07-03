@@ -1,11 +1,5 @@
 def duplicate_encode(word):
     list_of_char = list(word.lower())
-    strng = ""
-    for i in word.lower():
-        if list_of_char.count(i) == 1:
-            strng = strng + "("
-            
-        else :
-            strng = strng + ")"
-            
-    return strng
+    return "".join(list(map(lambda x : "(" if list_of_char.count(x) == 1 else ")", list_of_char)))
+
+    
