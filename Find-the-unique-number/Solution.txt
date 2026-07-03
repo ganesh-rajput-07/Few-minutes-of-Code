@@ -1,0 +1,4 @@
+def find_uniq(arr):
+    set_arr = set(arr)
+    return list(filter(lambda x: arr.count(x)==1, set_arr))[0]
+        
