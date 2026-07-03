@@ -1,0 +1,6 @@
+def order(sentence):
+    words = sentence.split()
+
+    words.sort(key=lambda word: next(int(c) for c in word if c.isdigit()))
+
+    return " ".join(words)
