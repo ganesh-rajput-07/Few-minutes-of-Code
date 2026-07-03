@@ -1,0 +1,2 @@
+def fake_bin(x):
+    return ''.join(list(map(lambda x : "0" if x in "01234" else "1" , list(x))))
