@@ -1,0 +1,3 @@
+def is_triangle(a, b, c):
+    
+    return True if a+b>c and b+c>a and a+c>b else False
