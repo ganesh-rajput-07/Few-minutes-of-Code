@@ -1,0 +1,12 @@
+def solution(s):
+    if len(s) == 0 : return s
+    word_list = []
+    checkpoint = 0
+    for idx,i in enumerate(list(s)) :
+        if i.isupper():
+            word_list.append(s[checkpoint:idx])
+            checkpoint = idx
+        if idx+1 == len(s):
+            word_list.append(s[checkpoint:idx+1])
+        
+    return " ".join(word_list) if word_list else s
