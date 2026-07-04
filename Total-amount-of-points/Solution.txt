@@ -1,0 +1,12 @@
+def points(games):
+    score = 0
+    for i in games:
+        x,y = tuple(i.split(":"))
+        if x > y :
+            score = score + 3 
+        elif x < y:
+            continue
+        else :
+            score = score + 1
+        
+    return score
