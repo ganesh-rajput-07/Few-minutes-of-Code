@@ -1,0 +1,6 @@
+def count_sheep(n):
+    strng = ''
+    if n == 0 : return strng
+    for i in range(0,n):
+        strng = strng + f"{i+1} sheep..."
+    return strng
