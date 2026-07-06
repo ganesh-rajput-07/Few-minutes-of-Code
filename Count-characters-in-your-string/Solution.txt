@@ -1,0 +1,6 @@
+def count(s):
+    set_s = list(s)
+    output_dict = {}
+    for i in set(set_s):
+        output_dict[i] = set_s.count(i)
+    return output_dict
