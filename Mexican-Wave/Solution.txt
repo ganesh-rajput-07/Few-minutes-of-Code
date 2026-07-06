@@ -1,0 +1,8 @@
+def wave(people):
+    output_list = []
+    for idx,i in enumerate(list(people)):
+        if i == " ":
+            continue
+        output_list.append(people[:idx] + people[idx].upper() + people[idx+1:])
+        
+    return output_list
