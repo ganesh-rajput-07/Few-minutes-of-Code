@@ -1,0 +1,12 @@
+def high(x):
+    highest_score = 0
+    highest_word = ""
+
+    for word in x.split():
+        score = sum(ord(ch) - 96 for ch in word)
+
+        if score > highest_score:
+            highest_score = score
+            highest_word = word
+
+    return highest_word
