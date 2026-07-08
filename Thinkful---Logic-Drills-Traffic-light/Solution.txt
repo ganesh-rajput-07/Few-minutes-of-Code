@@ -1,0 +1,2 @@
+def update_light(current):
+    return ["green", "yellow", "red"][["green", "yellow", "red"].index(current)+1 if ["green", "yellow", "red"].index(current)+1 != 3 else 0]
