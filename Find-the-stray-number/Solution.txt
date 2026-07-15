@@ -1,0 +1,5 @@
+def stray(arr):
+    dict_vals = dict()
+    for i in set(arr):
+        dict_vals[arr.count(i)] = i
+    return dict_vals[min(dict_vals.keys())]
