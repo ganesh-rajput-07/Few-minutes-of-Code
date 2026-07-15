@@ -1,0 +1,9 @@
+def expanded_form(num):
+    nums_list = list(str(num))
+    parts = []
+
+    for idx, digit in enumerate(nums_list):
+        if digit != "0":
+            parts.append(digit + "0" * (len(nums_list) - idx - 1))
+
+    return " + ".join(parts)
