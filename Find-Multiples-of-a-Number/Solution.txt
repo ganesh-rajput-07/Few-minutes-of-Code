@@ -1,0 +1,7 @@
+def find_multiples(integer, limit):
+    list1 = []
+    i = integer
+    while i <= limit:
+        list1.append(i)
+        i = i + integer    
+    return list1
