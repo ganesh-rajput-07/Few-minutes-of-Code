@@ -1,0 +1,33 @@
+def encrypt(text, n):
+    if not text or n <= 0:
+        return text
+
+    for _ in range(n):
+        text = text[1::2] + text[0::2]
+
+    return text
+
+
+def decrypt(encrypted_text, n):
+    if not encrypted_text or n <= 0:
+        return encrypted_text
+
+    for _ in range(n):
+        half = len(encrypted_text) // 2
+
+        # For odd-length strings, the even-indexed part
+        # has one extra character.
+        odd = encrypted_text[:half]
+        even = encrypted_text[half:]
+
+        decrypted = ""
+
+        for i in range(len(even)):
+            decrypted += even[i]
+
+            if i < len(odd):
+                decrypted += odd[i]
+
+        encrypted_text = decrypted
+
+    return encrypted_text
