@@ -1,0 +1,26 @@
+def sum_digits(number):
+    total = 0
+​
+    for i in str(abs(number)):
+        total += int(i)
+​
+    return total
+import codewars_test as test
+​
+try:
+    from solution import sumDigits as sum_digits
+except ImportError:
+    from solution import sum_digits
+​
+@test.describe("Fixed Tests")
+def fixed_tests():
+    @test.it("Basic Test Cases")
+    def basic_test_cases():
+        test.assert_equals(sum_digits(10), 1)
+        test.assert_equals(sum_digits(99), 18)
+        test.assert_equals(sum_digits(-32), 5)
+        test.assert_equals(sum_digits(1234567890), 45)
+        test.assert_equals(sum_digits(0), 0)
+        test.assert_equals(sum_digits(666), 18)
+        test.assert_equals(sum_digits(100000002), 3)
+        test.assert_equals(sum_digits(800000009), 17)
