@@ -1,0 +1,6 @@
+def capitals(word):
+    returnable_list = []
+    for idx,i in enumerate(word):
+        if i.isupper():
+            returnable_list.append(idx)
+    return returnable_list
