@@ -1,6 +1,6 @@
 # Two Sum
 
-**Difficulty:** 4 kyu
-**Platform:** Codewars
+**Difficulty:** Easy
+**Platform:** LeetCode
 **Language:** Unknown
-**URL:** https://www.codewars.com/kata/52c31f8e6605bcc646000082
+**URL:** https://leetcode.com/problems/two-sum
