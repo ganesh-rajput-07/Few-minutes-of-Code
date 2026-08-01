@@ -1,6 +1,6 @@
 # Add Two Numbers
 
-**Difficulty:** Medium
+**Difficulty:** Unknown
 **Platform:** LeetCode
 **Language:** Unknown
 **URL:** https://leetcode.com/problems/add-two-numbers
